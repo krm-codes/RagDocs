@@ -1,4 +1,3 @@
-```md
 # RAGDocs
 
 This is a Python application. Follow the steps below to set it up after cloning the repository.
@@ -8,7 +7,7 @@ This is a Python application. Follow the steps below to set it up after cloning 
 ### 1. Clone the repository
 
 ```sh
-git clone <repository-url>
+git clone 
 cd <repository-name>
 ```
 
@@ -35,15 +34,16 @@ pip install -r requirements.txt
 ## Running the Application
 
 ```sh
-python app.py
+streamlit run app.py
 ```
 
 ## Environment Variables
 
-If your app requires environment variables, create a `.env` file in the root directory and add your variables:
+The app requires environment variables, create a `.env` file in the root directory and add your variables:
 
 ```sh
-VAR_NAME=value
+OPENAI_API_KEY=your_key
+OLLAMA_BASE_URL=http://localhost:11434
 ```
 
 ## Deactivating the Virtual Environment
